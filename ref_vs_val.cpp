@@ -9,8 +9,14 @@ void swap_by_val(int x,int y){
 }
 void swap_pointers(int* x,int* y){
   int *temp=x;
-  int x=y;
-  int y=temp;
+  x=y;
+  y=temp;
+}
+void swap_by_ref(int &x,int &y){
+  int &temp=x;
+  x=y;
+  y=temp;
+
 }
 int main()
 {
