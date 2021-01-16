@@ -7,10 +7,10 @@ void swap_by_val(int x,int y){
     y=temp;
 
 }
-void swap_pointers(int *x,int *y){
-  int temp=*x;
-  int *x=*y;
-  int *y=temp;
+void swap_pointers(int* x,int* y){
+  int *temp=x;
+  int x=y;
+  int y=temp;
 }
 int main()
 {
