@@ -7,9 +7,15 @@ void swap_by_val(int x,int y){
     y=temp;
 
 }
+void swap_pointers(int *x,int *y){
+  int temp=*x;
+  int *x=*y;
+  int *y=temp;
+}
 int main()
 {
     int var1=1;
     int var2=2;
-
+    swap_pointers(var1,var2);
+    cout<<var1<<","<<var2<<endl
 }
