@@ -19,7 +19,10 @@ class Aggregator {
   //destructor
   ~Aggregator();
   void add_number(int);
-   int sum_all();
+  int sum_all();
+  void displayAddresses() const;
+  void operator=(Aggregator const &other);
+  Aggregator(Aggregator const &other);
   };
 Aggregator::Aggregator(int n) {
   //constructor
@@ -48,7 +51,7 @@ void Aggregator::add_number(int i) {
  }
 int main() {
   int nums;
-  cout << "Πόσουςαριθμούςθααθροίσετε;\n" ;
+  cout << "Πόσους αριθμούς θα αθροίσετε;\n" ;
   cin >> nums;
   Aggregator agg = Aggregator(nums);
   int in;
