@@ -117,3 +117,8 @@ std::ostream& operator<<(std::ostream& os,const Aggregator &obj)
 - διαγραφή του objecτ
 1. Κλήση derived καταστροφέα
 2. Κλήση base Καταστροφέα.
+Μπορούμε να κάνουμε επαναπροσδιορισμό function base class αν θέλουμε να χρησιμοποιούμε συγχρόνως και τις 2 γράφουμε
+using BaseClass::basefunc;
+### Είδη Κληρονομικοτητας
+Public inhertance
+protected inhertance:το public μερος της base class είναι protected σε αυτή την derived
