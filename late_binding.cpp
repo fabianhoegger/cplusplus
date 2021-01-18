@@ -2,7 +2,7 @@
 using namespace std;
 class Base {
     protected:
-       virtual void hello()
+        void hello()
         {
             cout << "base hello\n";
         }
@@ -14,7 +14,7 @@ class Base {
     };
 class Derived: public Base {
     public:
-        void hello() override
+        void hello()
         {
             cout << "derived hello\n";
         }
