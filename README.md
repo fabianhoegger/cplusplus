@@ -86,7 +86,15 @@ by value ).
 προβλήματα εαν χρησιμοποιηθεί λαθανσμενα.
 Πχ. αν γίνει ανάθεση με τη χρήση του =
 μεταξύ 2 αντικειμένων (obj2=obj1) τότε στο 2ο αντικείμενο αποθηκεύεται ο δείκτης στο 1ο αντικείμενο αντί να γίνει πραγματικά δημιουργία νέου ίδιου αντικειμένου.
-Στη συγκεκριμένη περίπτωση μπορεί να χρησιμοποιηθεί και Copy Constructor
+Στη συγκεκριμένη περίπτωση μπορεί να χρησιμοποιηθεί και Copy Constructor.
+### Overloading << operator to print class objects
+για να γίνεται το object cout πρέπει να κάνουμε overload τον << στην κλάσση
+std.
+std::ostream& operator<<(std::ostream& os,const Aggregator &obj)
+αυτό όμως θα δουλεύει μόνο με την προυπόθεση ότι υπάρχουν accessors στην κλάση μας
+για να εκτυπωθούν τα data members.
+Καλ΄΄υτερη λύση είναι να ορίσουμε το std ως friend class
+
 ### Copy Constructor
 Δημιουργεί το αντίγραφό ενός αντικειμένου (ίδιας κλάσης)
 Πάρεχεται από τον compiler ακόμη και αν δεν τον δημιουργήσετε εσείς(trivial copy constructor)
@@ -98,3 +106,14 @@ by value ).
 1.Copy Constructor
 2.Overloaded = operator
 3.Destructor
+## Κληρονομικότητα
+Υπάρχει η base class και η derived class
+η derived class κληρονωμεί τα χαρακτηριστικά της base class αλλά έχει
+πρόσβαση μόνο στα public&protected στοιχεία μιας base class
+- Σύνταξη: class Derived: public Base(){}
+- Κατασκευη/Καταστροφή
+1. Κλήση Base Κατασκευαστή
+2. Κλήση Derived Κατασκευαστή
+- διαγραφή του objecτ
+1. Κλήση derived καταστροφέα
+2. Κλήση base Καταστροφέα.
