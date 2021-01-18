@@ -93,3 +93,8 @@ by value ).
 -Κλήση copy constructor πχ Aggregator cp(agg);
 - Προσθήκη στην αρχική κλάση
  void Aggregator(Aggregator const &other);
+#### Rule of three
+Αν ο σχεδιαστής μια κλάσης θεωρεί ότι πρέπει να παρέχει 1 απο τα 3 τότε πρέπει να παρέχει και τα 3:
+1.Copy Constructor
+2.Overloaded = operator
+3.Destructor
