@@ -1,6 +1,7 @@
 #include <iostream>
 #include <string>
 #include <iomanip>
+#include <array>
 using namespace std;
 class  Basic{
     public:
@@ -66,6 +67,14 @@ bool Derived::getFlag(){
 }
 int main()
 {
+    const int N=5;
+    array<int, N> myNumbers;
+    myNumbers[0]=1;
+    myNumbers[1]=2;
+    myNumbers[2]=3;
+    myNumbers[3]=4;
+    myNumbers[4]=5;
+    cout<<myNumbers.at(1)<<endl;
     Basic obj1;
     string name="Martha";
     Derived obj2;
