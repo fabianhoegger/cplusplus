@@ -67,11 +67,15 @@ bool Derived::getFlag(){
 }
 int main()
 {
-    const int N=5;
-    array<int, N> myNumbers;
-    for( int i=0;  i<myNumbers.size(); i++) {
-         cout << "Δώστετο "<<  (i+1) <<" στοιχείο: " ; cin >> myNumbers[i];
-         }
+  const int N=5;
+      array<int, N> myNumbers;
+    /*for( int i=0;  i<myNumbers.size(); i++) {
+        cout << "Δώστετο "<<  (i+1) <<" στοιχείο: " ; cin >> myNumbers[i];
+        }
+        */
+    vector<int> myVec;
+    myVec.push_back(1);
+    cout<<"Vector Capacity: "<<myVec.capacity()<<endl;
     cout<<myNumbers.at(1)<<endl;
     Basic obj1;
     string name="Martha";
