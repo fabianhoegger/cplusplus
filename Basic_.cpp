@@ -73,6 +73,8 @@ int main()
         cout << "Δώστετο "<<  (i+1) <<" στοιχείο: " ; cin >> myNumbers[i];
         }
         */
+
+        
     vector<int> myVec;
     myVec.push_back(1);
     cout<<"Vector Capacity: "<<myVec.capacity()<<endl;
