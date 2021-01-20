@@ -101,6 +101,12 @@ std::ostream& operator<<(std::ostream& os,const Aggregator &obj)
 -Κλήση copy constructor πχ Aggregator cp(agg);
 - Προσθήκη στην αρχική κλάση
  void Aggregator(Aggregator const &other);
+## Destructor
+Δήλωσε ~Classname();
+Καλείται αυτόματα
+Χρησιμοποείται για κλάσεις με pointers σαν χαρ/κα
+για να διαγράφονται όλα τα δεδομένα.
+
 #### Rule of three
 Αν ο σχεδιαστής μια κλάσης θεωρεί ότι πρέπει να παρέχει 1 απο τα 3 τότε πρέπει να παρέχει και τα 3:
 1.Copy Constructor
