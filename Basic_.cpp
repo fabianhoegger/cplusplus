@@ -2,13 +2,14 @@
 #include <string>
 #include <iomanip>
 #include <array>
+#include <vector>
 using namespace std;
 class  Basic{
     public:
     int Add(int ,int );
     Basic();
     ~Basic();
-    void setName(string);
+    virtual void setName(string);
     void setVars(int,int);
     string getName();
     int* getVars();
@@ -74,7 +75,7 @@ int main()
         }
         */
 
-        
+
     vector<int> myVec;
     myVec.push_back(1);
     cout<<"Vector Capacity: "<<myVec.capacity()<<endl;
